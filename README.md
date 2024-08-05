@@ -1,15 +1,23 @@
-# Bootstrap starter
+# Prototipos de recursos educativos abiertos
+## MRU
+### posición vs tiempo
+:link: [enlace](https://glacy.github.io/MRU/)
 
-Include [Bootstrap](https://getbootstrap.com) CSS and JS via the [jsDelivr CDN](https://www.jsdelivr.com/package/npm/bootstrap).
+Gráfica y ecuación de la posición en función del tiempo. La persona usuaria ingresa los parámetros:
+- :point_right: posición inicial
+- :runner: velocidad constante
 
-## Edit in browser
+## MRUA
+### posición vs tiempo / velocidad vs tiempo
+:link: [enlace](https://glacy.github.io/MRUA/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/starter?file=index.html)
+Gráficas y ecuaciones de la posición en función del tiempo y de la velocidad en función del tiempo. La persona usuaria ingresa los parámetros:
+- :point_right: posición inicial
+- :runner: velocidad constante
+- :fast_forward: aceleración
 
-## Download
-
-```sh
-git clone https://github.com/twbs/examples.git
-cd examples/starter/
-open index.html
-```
+## Centro de masa
+### Molécula de amonio
+:link: [enlace](https://glacy.github.io/cm/)
+Visualización interactiva de la representación gráfica de una molécula de amonio:
+- :video_game: Asymptote
