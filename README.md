@@ -21,3 +21,12 @@ Gráficas y ecuaciones de la posición en función del tiempo y de la velocidad 
 :link: [enlace](https://glacy.github.io/cm/)
 Visualización interactiva de la representación gráfica de una molécula de amonio:
 - :video_game: Asymptote
+
+## Movimiento Armónico Simple (MAS)
+### posición vs tiempo
+:link: [enlace](https://glacy.github.io/MAS/)
+
+Gráfica y ecuación de la posición en función del tiempo. La persona usuaria ingresa los parámetros:
+- :point_right: Amplitud
+- :runner: velocidad angular
+- 🔃ángulo de fase
