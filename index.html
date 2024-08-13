@@ -27,12 +27,12 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light"> 
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
             src="https://tecdigital.tec.ac.cr/repositorio/tecdigital/TD/img/tec-logo.png"
-            alt="tecDigital-logo"
+            alt="tec-logo"
             width="150"
           />
         </a>
@@ -83,12 +83,13 @@
       </div>
     </div>
 
-    <div class="iframe-container" id="appContainer">
-      
-      <div id="app" class="container">
-        
-        <div id="chart-container">
-          <button class="fullscreen-btn" onclick="toggleFullScreen('appContainer')">Pantalla Completa</button>
+    <div class="fullscreen-container" id="appContainer">
+                
+      <div id="chart-container" class="container">
+        <button class="fullscreen-btn" id="fullscreenToggle" onclick="toggleFullScreen('appContainer')"><span class="material-icons" aria-hidden="true">fullscreen</span
+            >Pantalla completa</button>
+        <!-- <div id="chart-container"> -->
+          
           <section>
             <div id="controles" class="row">
               <div class="col input-group mb-3" id="amplitud">
@@ -120,7 +121,7 @@
                   <!-- </span> -->
                 </div>
               </div>
-  
+      
               <div class="col input-group mb-3" id="frecuencia">
               <!-- <span class="input-group-text">\( \omega \)</span> -->
               <div class="slider-container">
@@ -146,7 +147,7 @@
                 </span>
               </div>
             </div>
-  
+      
             <div class="col input-group mb-3" id="fase">
               <!-- <span class="input-group-text">\(\phi\)</span> -->
               <div class="slider-container">
@@ -171,7 +172,7 @@
                 </span>
               </div>
             </div>
-  
+      
             <div class="col input-group mb-3" id="tiempo">
               <!-- <span class="input-group-text">\(t_{\text{máx}}\)</span> -->
               <div class="slider-container">
@@ -198,21 +199,18 @@
               </div>
             </div>
           </section>
-  
+      
           <section>
             <div id="legend-container"></div>
           </section>
-  
+      
           <section>
             <canvas id="chartCanvas"></canvas>
           </section>
-        </div>
+        <!-- </div> -->
       </div>
-    </div>
-
     
-
-
+    </div>
 
     <footer class="site-footer">
       <div class="container text-center">
@@ -233,7 +231,7 @@
             <p>
               <a
                 title="ir al repositorio"
-                href="https://github.com/glacy/MRU"
+                href="https://github.com/glacy/MAS"
                 target="_blank"
                 rel="noopener"
                 ><span class="material-icons" aria-hidden="true">code</span
@@ -247,10 +245,6 @@
 
     <script src="main.js"></script>
     <script src="sliders.js"></script>
-    <script src="fullscreen.js">
-      
-    </script>
-
-
+    <script src="fullscreen.js"></script>
   </body>
 </html>
