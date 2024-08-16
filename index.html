@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gráfica M.A.S</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> 
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>  -->
     <script
       id="MathJax-script"
       async
@@ -72,19 +72,14 @@
       </div>
     </div>
 
-    <div class="fullscreen-container container" id="appContainer">
+    
                 
       <div id="chart-container" class="container">
-        <button class="fullscreen-btn" id="fullscreenToggle" onclick="toggleFullScreen('appContainer')"><span class="material-icons" aria-hidden="true">fullscreen</span
-            >Pantalla completa</button>
-        <!-- <div id="chart-container"> -->
-          
-          <section>
+        
+          <section id="controles">
             <div id="controles" class="row">
               <div class="col input-group mb-3" id="amplitud">
-                <!-- <div class="input-group-prepend"> -->
-                <!-- <span class="input-group-text">\(A\)</span> -->
-                <!-- </div> -->
+                
                 <div class="slider-container">
                   <span
                     class="slider-value"
@@ -93,7 +88,7 @@
                     data-sym="\(A =\)"
                     ></span
                   >
-                  <!-- <span class="input-group-text"> -->
+                  
                   <span class="input-group-text">
                     <input
                       id="initialPosition"
@@ -107,12 +102,12 @@
                       aria-describedby="initialPosition"
                     />
                   </span>
-                  <!-- </span> -->
+                  
                 </div>
               </div>
       
               <div class="col input-group mb-3" id="frecuencia">
-              <!-- <span class="input-group-text">\( \omega \)</span> -->
+              
               <div class="slider-container">
                 <span
                   class="slider-value"
@@ -138,7 +133,7 @@
             </div>
       
             <div class="col input-group mb-3" id="fase">
-              <!-- <span class="input-group-text">\(\phi\)</span> -->
+              
               <div class="slider-container">
                 <span
                   class="slider-value"
@@ -163,7 +158,7 @@
             </div>
       
             <div class="col input-group mb-3" id="tiempo">
-              <!-- <span class="input-group-text">\(t_{\text{máx}}\)</span> -->
+              
               <div class="slider-container">
                 <span
                   class="slider-value"
@@ -189,17 +184,36 @@
             </div>
           </section>
       
-          <section>
-            <div id="legend-container"></div>
-          </section>
-      
-          <section>
-            <canvas id="chartCanvas"></canvas>
-          </section>
-        <!-- </div> -->
+          <div>
+            <section>
+              <div id="legend-container"></div>
+            </section>
+            <section>
+              <canvas id="chartCanvas"></canvas>
+            </section>
+          </div>
+
+          <div>
+            <section>
+              <div id="legend-container-v"></div>
+            </section>
+            <section>
+              <canvas id="chartCanvasV"></canvas>
+            </section>
+          </div>
+
+          <div>
+            <section>
+              <div id="legend-container-a"></div>
+            </section>
+            <section>
+              <canvas id="chartCanvas-a"></canvas>
+            </section>
+          </div>
       </div>
     
-    </div>
+      
+  </div>
 
     <footer class="site-footer">
       <div class="container text-center">
@@ -234,6 +248,6 @@
 
     <script src="main.js"></script>
     <script src="sliders.js"></script>
-    <script src="fullscreen.js"></script>
+    <!-- <script src="fullscreen.js"></script> -->
   </body>
 </html>

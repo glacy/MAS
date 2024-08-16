@@ -2,6 +2,7 @@
 	--bs-body-bg: var(--bs-gray-100);
 	}
 
+	
 canvas {
 	max-width: 100%;
 	margin: 20px;
@@ -23,7 +24,7 @@ canvas {
 
 #chart-container {
 	/* padding-top: 30px; */
-	width:100%;
+	/* width:100%; */
 	position: relative;
 	/* width: 600px;
 	height: 400px; */

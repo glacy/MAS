@@ -1,15 +1,3 @@
-// Añadir eventos a los sliders
-document
-  .getElementById("initialPosition")
-  .addEventListener("input", generarGrafico);
-document
-  .getElementById("initialVelocity")
-  .addEventListener("input", generarGrafico);
-document.getElementById("tmax").addEventListener("input", generarGrafico);
-
-document.getElementById("Phase").addEventListener("input", generarGrafico);
-
-// Colocar el valor de cada slider encima del 'thumb'
 document.addEventListener("DOMContentLoaded", function () {
   const sliders = [
     {
@@ -29,9 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
       valueDisplay: document.getElementById("sliderValue4"),
     },
   ];
-
-  //const sliderValue = document.getElementById("sliderValue");
-  //const sliderContainer = document.querySelector(".slider-container");
 
   function updateSliderValue(slider, valueDisplay) {
     const units = valueDisplay.getAttribute("data-units");
