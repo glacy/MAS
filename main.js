@@ -226,7 +226,7 @@ function generarGrafico() {
           label: function (context) {
             let label = context.dataset.label || "";
             if (label) {
-              label = "omega= ";
+              label = "v= ";
             }
             if (context.parsed.y !== null) {
               label +=
@@ -293,7 +293,7 @@ function generarGrafico() {
           label: function (context) {
             let label = context.dataset.label || "";
             if (label) {
-              label = "alpha= ";
+              label = "a= ";
             }
             if (context.parsed.y !== null) {
               label +=
