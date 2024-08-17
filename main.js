@@ -74,7 +74,7 @@ function generarGrafico() {
         borderColor: "rgb(255, 204, 188)",
         data: positionArray,
         fill: false,
-        pointStyle: "rect",
+        pointStyle: false,
       },
     ],
   };
@@ -87,7 +87,7 @@ function generarGrafico() {
         borderColor: "rgb(255, 204, 188)",
         data: velocityArray,
         fill: false,
-        pointStyle: "rect",
+        pointStyle: false,
       },
     ],
   };
@@ -100,7 +100,7 @@ function generarGrafico() {
         borderColor: "rgb(255, 204, 188)",
         data: accelerationArray,
         fill: false,
-        pointStyle: "rect",
+        pointStyle: false,
       },
     ],
   };
