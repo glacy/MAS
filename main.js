@@ -163,7 +163,7 @@ function generarGrafico() {
             }
             if (context.parsed.y !== null) {
               label +=
-                new Intl.NumberFormat("en-US").format(context.parsed.y) + " m";
+                new Intl.NumberFormat("en-US").format(context.parsed.y) + " cm";
             }
             return label;
           },
@@ -230,7 +230,8 @@ function generarGrafico() {
             }
             if (context.parsed.y !== null) {
               label +=
-                new Intl.NumberFormat("en-US").format(context.parsed.y) + " m";
+                new Intl.NumberFormat("en-US").format(context.parsed.y) +
+                " cm/s";
             }
             return label;
           },
@@ -297,7 +298,8 @@ function generarGrafico() {
             }
             if (context.parsed.y !== null) {
               label +=
-                new Intl.NumberFormat("en-US").format(context.parsed.y) + " m";
+                new Intl.NumberFormat("en-US").format(context.parsed.y) +
+                " cm/s^2";
             }
             return label;
           },
