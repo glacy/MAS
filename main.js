@@ -625,3 +625,5 @@ function updateChart() {
   chartCanvas.data.labels = Array.from({ length: time }, (_, i) => i + 1);
   chartCanvasV.data.labels = Array.from({ length: time }, (_, i) => i + 1);
 }
+
+generarGrafico();

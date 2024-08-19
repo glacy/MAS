@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  MathJax.typeset();
+
   const sliders = [
     {
       slider: document.getElementById("initialPosition"),
@@ -23,10 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sym = valueDisplay.getAttribute("data-sym");
 
     valueDisplay.innerHTML = `${sym} ${slider.value} ${units}`;
-    MathJax.typesetPromise([valueDisplay]).catch(function (err) {
-      console.log("MathJax error: " + err.message);
-    });
-
+    MathJax.typeset();
     // valueDisplay.textContent = sym + slider.value + units;
     // const sliderRect = slider.getBoundingClientRect();
     // const containerRect = slider.parentElement.getBoundingClientRect();
