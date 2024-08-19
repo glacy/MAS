@@ -32,12 +32,6 @@ canvas {
 	border: solid 1px;
 	}
 
-.btn {
-	border-style: solid solid solid solid; 
-	border-image: linear-gradient(45deg,#002856ff,#7A8AA7ff,#A0AF84ff,#FF6666, #AA4242ff) 1; 
-	font-size: 12pt;
-	}
-
 .material-icons{
 	transform: translateY(11.5%);		
 	}
